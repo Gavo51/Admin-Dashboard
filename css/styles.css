@@ -28,7 +28,7 @@ ul {
 }
 
 .icon {
-    width:30px;
+    width:25px;
 }
 
 /* SIDEBAR */
@@ -182,6 +182,7 @@ header button {
 
 .project-showcase > h1, .side-section > h1 {
     font-size:1.2rem;
+    margin-bottom:15px;
 }
 
 /* PROJECT SHOWCASE */
@@ -200,11 +201,19 @@ header button {
 .project-showcase .project-card {   
     border-left: 10px solid rgb(255, 187, 0);
     grid-template-rows:auto 1fr auto;
+    gap:10px;
     height: 210px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color:rgb(82, 82, 82);
 }
 
 .project-card .icon-group {
     justify-self: end;
+    display:flex;
+    gap: 30px;
 }
 
 /* SIDE SECTION */
@@ -221,6 +230,11 @@ header button {
     display:grid;
     grid-template-rows: repeat(3,1fr);
     gap:15px;
+}
+
+.announcement-msg p {
+    font-size: 0.7rem;
+    color:rgb(82, 82, 82);
 }
 
 .announcement-msg:nth-child(-n+2) {
@@ -243,8 +257,8 @@ header button {
 }
 
 .trending-profile .profile-picture {
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
     background-color:rgb(255, 50, 245);
     border-radius: 100%;  
     grid-row: 1 / 3;  
@@ -252,5 +266,10 @@ header button {
 }
 
 .trending-profile h4 {
-    align-self:end;
+    align-self:center;
+}
+
+.trending-profile p {
+    font-size: 0.9rem;
+    color:rgb(82, 82, 82);
 }
