@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --primary-color:#0ea5e9;
-    --main-background-color:#bbe9ff;
+    --primary-color:#2563eb;
+    --main-background-color:#93c5fd;
 }
 
 * {
@@ -96,6 +96,7 @@ header {
 }
 
 header .search-field {
+    margin-top:-10px;
     display: flex;
     align-items: center;
     gap:20px;
@@ -110,6 +111,7 @@ header .search-field {
 } 
 
 header .user-control-panel {
+    margin-top:-10px;
     display:flex;
     align-items: center;
     justify-content: flex-end;
@@ -117,13 +119,14 @@ header .user-control-panel {
 }
 
 .user-control-panel .profile-picture {
-    width:35px;
+    min-width:35px;
     height:35px;
     background-color:rgb(255, 50, 245);
     border-radius: 100%;    
 }
 
 header .user-welcome {
+    align-self: start;
     display: flex;
     align-items: center;
     gap:20px;
@@ -135,7 +138,7 @@ header .user-welcome {
 }
 
 .user-welcome .profile-picture {
-    width:60px;
+    min-width:60px;
     height:60px;
     background-color:rgb(255, 50, 245);
     border-radius: 100%; 
