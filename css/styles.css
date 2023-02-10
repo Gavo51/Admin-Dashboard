@@ -2,7 +2,7 @@
 
 :root {
     --primary-color:#0ea5e9;
-    --background-color:#bbe9ff;
+    --main-background-color:#bbe9ff;
 }
 
 * {
@@ -46,11 +46,9 @@ ul {
 }
 
 .sidebar .logo {
-    justify-self: left;
-    display:grid;
-    grid-template-columns: auto 1fr;
+    display:flex;
     align-items: center;
-    gap:5px;
+    gap:15px;
 } 
 
 .logo img {
@@ -62,15 +60,27 @@ ul {
     font-size:1.5rem;
 }
 
-nav li {
-    margin-bottom:15px;
+nav .link-list {
+    display:grid;
+    gap:15px;
 }
 
-nav li:nth-child(6){
+.link-list img {
+    filter: invert(1); 
+    width:20px;
+}
+ 
+.link-list li a {
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.link-list li:nth-child(6){
     margin-bottom: 100px;
 }
 
-nav a {
+.link-list a {
     color:white;
 }
 
@@ -96,7 +106,7 @@ header .search-field {
     height: 25px;
     border: none;
     border-radius: 30px;
-    background-color: var(--background-color);
+    background-color: var(--main-background-color);
 } 
 
 header .user-control-panel {
@@ -152,7 +162,7 @@ header button {
 /* MAIN SECTION */
 
 .main-section {
-    background-color:var(--background-color);
+    background-color:var(--main-background-color);
     padding:20px;
     display: grid;
     gap:20px;
