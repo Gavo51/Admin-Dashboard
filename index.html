@@ -9,29 +9,38 @@
 </head>
 <body>
 
-<header>
-    <div>
-        <div class="search-bar"></div>
-        <img src="" alt="" class="notification-icon">
-        <img src="" alt="" class="profile-icon">
-        <p class="username">Gabriel Vargas</p>
+
+<header id="header">
+
+    <div class="search-field">
+        <img src="./icons/home.svg" alt="magnifier-icon" class="icon">
+        <input type="text"  class="search-bar">
     </div>
-    <div>
-        <img src="" alt="" class="profile-picture">
-        <p>Hi there,</p>
-        <h1>Gabriel Vargas (@gavo51)</h1>
-        <div class="button-group">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+    <div class="user-control-panel">
+        <img src="./icons/home.svg" alt="bell-icon" class="icon">
+        <div class="profile-picture"></div>
+        <p class="username">Gabriel Vargas</p>
+    </div>  
+    <div class="user-welcome">
+        <div class="profile-picture"></div>
+        <div class="user-info">
+            <p>Hi there,</p>
+            <h1>Gabriel Vargas (@gavo51)</h1>
         </div>
+    </div>
+    <div class="button-group">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+    </div>
+
     </div>
 </header>
 
 
 <div class="sidebar">
     <div class="logo">
-        <img src="" alt="">
+        <img src="/icons/odin-lined.png" alt="webpage-logo">
         <h1>Dashboard</h1>
     </div>
     <nav>
@@ -50,66 +59,105 @@
 </div> 
 
 <section class="main-section">
-    <div class="grid-container">
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+    <div class="project-showcase">
+        <h1>Your projects</h1>
+        <div class="project-cards-container">
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
+            </div>
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
+            </div>
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
+            </div>
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
+            </div>
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
+            </div>
+            <div class="project-card card">
+                <h3>Project Name</h3>
+                <p>Project description</p>
+                <div class="icon-group">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                    <img src="./icons/home.svg" alt="" class="icon">
+                </div>
             </div>
         </div>
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="project-display">
-            <h3>Project Name</h3>
-            <p>Project description</p>
-            <div class="icon-group">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="announcements-display">
-        </div>
-        <div class="trending-display">
-        </div>
+    </div>
 
+    <aside class="side-section">
+        <h1>Announcements</h1>
+        <div class="announcements-display card">
+            <div class="announcement-msg">
+                <h4>Site Maintenance</h4>
+                <p>Random message</p>
+            </div>
+            <div class="announcement-msg">
+                <h4>Community Share Day</h4>
+                <p>Random Message</p>
+            </div>
+            <div class="announcement-msg">
+                <h4>Updated Privacy Policy</h4>
+                <p>Random Message</p>
+            </div>
+        </div>
+        <h1>Trending</h1>
+        <div class="trending-display card">
+            <div class="trending-profile">
+                <div class="profile-picture"></div>
+                <h4>@tegan</h4>
+                <p>World Peace Builder</p>
+            </div>
+            <div class="trending-profile">
+                <div class="profile-picture"></div>
+                <h4>@morgan</h4>
+                <p>Super Cool Project</p>
+            </div>
+            <div class="trending-profile">
+                <div class="profile-picture"></div>
+                <h4>@kendall</h4>
+                <p>Life Changing App</p>
+            </div>
+            <div class="trending-profile">
+                <div class="profile-picture"></div>
+                <h4>@alex</h4>
+                <p>No Traffic Maker</p>
+            </div>
+        </div>
     </div>
 
 </section>
